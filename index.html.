@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>מבוא למערכות מידע וניהול נתונים</title>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #0d47a1;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .features {
+      background: #ffffff;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #0d47a1;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <h1>קורס: מבוא למערכות מידע וניהול נתונים</h1>
+        <ul>
+          <li><a href="#about">על הקורס</a></li>
+          <li><a href="#topics">נושאים מרכזיים</a></li>
+          <li><a href="#trends">מגמות עדכניות</a></li>
+          <li><a href="#contact">צור קשר</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>ברוכים הבאים לקורס המוביל בישראל</h2>
+      <p>הכרת עקרונות יסוד של מערכות מידע, ניהול נתונים, אבטחת מידע, ניתוח נתונים, AI, BlockChain ועוד.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="features">
+    <div class="container">
+      <h2>על הקורס</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>מה תלמדו?</h3>
+          <p>הקורס עוסק ביסודות מערכות המידע הארגוניות, ניהול מסדי נתונים, ניתוח נתונים, אבטחת מידע ומערכות BI.</p>
+        </div>
+        <div class="card">
+          <h3>למי מיועד?</h3>
+          <p>סטודנטים, אנשי מקצוע בתחום ההייטק, מנהלי פרויקטים, وكل מי שרוצה להבין את עולם המידע והנתונים.</p>
+        </div>
+        <div class="card">
+          <h3>מה מקבלים?</h3>
+          <p>ידע מעשי, תעודת הסמכה, גישה למשאבים דיגיטליים, וסיוע בהשתלבות בשוק העבודה.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Topics Section -->
+  <section id="topics">
+    <div class="container">
+      <h2>נושאים מרכזיים</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>מערכות מידע ארגוניות</h3>
+          <p>מבנים, תהליכים, אסטרטגיה טכנולוגית, שילוב מערכות, והשלכות על העסק.</p>
+        </div>
+        <div class="card">
+          <h3>ניהול נתונים ומסדי נתונים</h3>
+          <p>SQL, NoSQL, Data Warehousing, ETL, Cloud Databases.</p>
+        </div>
+        <div class="card">
+          <h3>אבטחת מידע ופרטיות</h3>
+          <p>GDPR, Cyber Security, Risk Management, Encryption.</p>
+        </div>
+        <div class="card">
+          <h3>ניתוח נתונים ו-BI</h3>
+          <p>Power BI, Tableau, Python, Machine Learning, Data Visualization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trends Section -->
+  <section id="trends" class="features">
+    <div class="container">
+      <h2>מגמות מובילות כיום</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>AI ולמידת מכונה</h3>
+          <p>שימושים מעשיים של AI בניתוח נתונים, אוטומציה, חיזוי ואופטימיזציה.</p>
+        </div>
+        <div class="card">
+          <h3>BlockChain ו-Crypto</h3>
+          <p>האם זה רלוונטי גם לכם? איך זה משפיע על ניהול נתונים ומערכות מידע?</p>
+        </div>
+        <div class="card">
+          <h3>Cloud Computing</h3>
+          <p>AWS, Azure, Google Cloud – איך לבחור, איך להקים, איך לשמור על ביטחון.</p>
+        </div>
+        <div class="card">
+          <h3>Data Governance</h3>
+          <p>איך לנהל נתונים ברמה ארגונית, לנהל זכויות, להבטיח איכות ותיעוד.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="background:#e3f2fd; text-align:center;">
+    <div class="container">
+      <h2>מעוניינים להירשם?</h2>
+      <p style="margin-top:20px;">השאירו פרטים ונחזור אליכם בהקדם:</p>
+      <form style="margin-top:30px; display:flex; flex-direction:column; gap:15px; max-width:500px; margin:auto;">
+        <input type="text" placeholder="שם מלא" required style="padding:10px; font-size:1rem;" />
+        <input type="email" placeholder="כתובת אימייל" required style="padding:10px; font-size:1rem;" />
+        <textarea placeholder="הודעה" rows="4" style="padding:10px; font-size:1rem;"></textarea>
+        <button type="submit" style="padding:12px; background:#0d47a1; color:white; border:none; font-size:1rem; cursor:pointer;">שלח</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 קורס "מבוא למערכות מידע וניהול נתונים". כל הזכויות שמורות.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
