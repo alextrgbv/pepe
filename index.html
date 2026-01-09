@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מבוא למערכות מידע וניהול נתונים</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#home" class="nav-link">דף הבית</a>
+        <a href="#about" class="nav-link">מה זה?</a>
+        <a href="#curriculum" class="nav-link"> תוכנית הקורס</a>
+        <a href="#contact" class="nav-link">צור קשר</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>מבוא למערכות מידע וניהול נתונים</h1>
+        <p>הכנת קורס מתמחת לכל התאים של שיתוף פעולה עם אינפיוזים והתקדמות במגמות הידע moderne.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>מה זה?</h2>
+        <p>קורס המבוסס על תמחת שיתוף פעולה עם אינפיוזים והתקדמות במגמות הידע moderne.</p>
+        <!-- Add more details about the course here -->
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="curriculum">
+        <h2> תוכנית הקורס</h2>
+        <ul>
+            <li>תורת אינפיוזים</li>
+            <li>ניהול מידע</li>
+            <li>התקדמות במגמות הידע moderne</li>
+            <!-- Add more curriculum items here -->
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>צור קשר</h2>
+        <form action="#" method="post">
+            <label for="name">שם:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">כתובת אימייל:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">הודעה:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <button type="submit">שלח</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 מרכז חינוך ופיתוח אינפיוזים. כל הזכויות שמורות.</p>
+    </footer>
+
+    <script src="app.js"></script> <!-- Add your React code here if needed -->
+</body>
+</html>
